@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        table,tr,td{
+            border:1px solid #808080;
+            border-collapse:unset;
+        }
+        table{
+            width:50%;
+            height:50%;
+            text-align:center;
+        }
+        /*tr:nth-child(2n+1){background-color:#ffd800}*/
+        tr:hover{background-color:white}
+        thead, tfoot{
+            background-color:#808080;
+        }
+
+    </style>
+</head>
+<body>
+    <table>
+        <colgroup>
+            <col span="2" style="background-color:blue" />
+            <col span="1" style="background-color:green" />
+            <col span="2" style="background-color:pink" />
+        </colgroup>
+        <thead>
+            <tr>
+                <th>Transaction Date</th>
+                <th>Payment type and details</th>
+                <th>Paid Out</th>
+                <th>Paid in</th>
+                <th>Balance</th>
+            </tr>
+        </thead>
+        <tr>
+            <td>12 Jun 09</td>
+            <td>Amazon.com</td>
+            <td>$49.99</td>
+            <td></td>
+            <td>$8411.16</td>
+        </tr>
+        <tr>
+            <td>13 Jun 09</td>
+            <td>Total</td>
+            <td>$60.00</td>
+            <td></td>
+            <td>$8411.16</td>
+        </tr>
+        <tr>
+            <td>14 Jun 09</td>
+            <td>Whole Foods</td>
+            <td>$75.28</td>
+            <td></td>
+            <td>$8275.16</td>
+        </tr>
+        <tr>
+            <td>15 Jun 09</td>
+            <td>Visa Payment</td>
+            <td>$350.28</td>
+            <td></td>
+            <td>$7975.16</td>
+        </tr>
+        <tr>
+            <td>16 Jun 09</td>
+            <td>Cheque 122501</td>
+            <td></td>
+            <td>$1000.00</td>
+            <td>$9356.16</td>
+        </tr>
+        <tr>
+            <td>17 Jun 09</td>
+            <td>Murco</td>
+            <td>$60.00</td>
+            <td></td>
+            <td>$9315.78</td>
+        </tr>
+        <tr>
+            <td>18 Jun 09</td>
+            <td>Wrox Press</td>
+            <td></td>
+            <td>$1450.00</td>
+            <td>$9375.15</td>
+        </tr>
+        <tfoot>
+            <tr>
+                <td></td>
+                <td></td>
+                <td>$1970.27</td>
+                <td>$2450.00</td>
+                <td>$8940.88</td>
+            </tr>
+        </tfoot>
+
+    </table>
+</body>
+</html>
